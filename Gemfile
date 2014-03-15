@@ -10,6 +10,7 @@ gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
 
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
