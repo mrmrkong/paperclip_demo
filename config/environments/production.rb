@@ -79,5 +79,13 @@ PaperclipDemo::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Amazon S3 settings for Paperclip uploads
-
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_protocol => 'http',
+    :s3_credentials => {
+      :bucket => ENV['pdf-upload-using-paperclip'],
+      :access_key_id => ENV['AKIAJ6DCXGDUQZWQS5DA'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
