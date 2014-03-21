@@ -83,9 +83,9 @@ PaperclipDemo::Application.configure do
     :storage => :s3,
     :s3_protocol => 'http',
     :s3_credentials => {
-      :bucket => ENV['pdf-upload-using-paperclip'],
-      :access_key_id => ENV['AKIAJ6DCXGDUQZWQS5DA'],
-      :secret_access_key => ENV['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']
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end
